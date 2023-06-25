@@ -42,12 +42,13 @@ with contextlib.suppress(FileNotFoundError):
     zsh_target = HOME / ".zshrc"
     kak_config = CWD / ".kakrc"
     kak_target = HOME / ".config/kak/kakrc"
-    antigen_config = CWD / ".antigen.zsh"
-    antigen_target = HOME / ".antigen.zsh"
+    antigen_config = CWD / "antigen.zsh"
+    antigen_target = HOME / "antigen.zsh"
     zsh_dir = CWD / ".zsh"
     zsh_new_dir = HOME / ".zsh"
     zsh_new_dir.mkdir(exist_ok=True)
 
+    antigen_target.symlink_to(antigen_config)
     zsh_target.symlink_to(zsh_config)
     kak_target.symlink_to(kak_config)
     with contextlib.suppress(FileExistsError):

@@ -37,7 +37,6 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle HeroCC/LS_COLORS
 antigen bundle rupa/z
 antigen bundle djui/alias-tips
-antigen bundle mafredri/zsh-async
 antigen bundle seletskiy/zsh-fuzzy-search-and-edit
 antigen bundle popstas/zsh-command-time
 antigen bundle zsh-users/zsh-syntax-highlighting
